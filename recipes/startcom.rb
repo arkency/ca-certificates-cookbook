@@ -5,7 +5,7 @@ execute "update-ca-certificates" do
 end
 
 remote_file "/usr/local/share/ca-certificates/sub.class1.server.ca.crt" do
-  source "https://www.startssl.com/certs/sub.class1.client.ca.pem"
+  source "https://www.startssl.com/certs/sub.class1.server.ca.pem"
   owner  "root"
   group  "root"
   mode   "644"
